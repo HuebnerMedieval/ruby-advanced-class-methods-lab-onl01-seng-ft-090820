@@ -46,6 +46,9 @@ class Song
 
   def self.new_from_filename(filename)
     song_ar = filename.split(/-./)
+    song_ar.map! do |element|
+      if element[0] == " "
+        element.
   end
 
 end
