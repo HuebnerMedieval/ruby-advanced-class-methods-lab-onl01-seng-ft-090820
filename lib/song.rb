@@ -45,15 +45,8 @@ class Song
   end
 
   def self.new_from_filename(filename)
-    song_ar = filename.split(/-./)
-    song_ar.map! do |element|
-      if element[0] == " "
-        element.shift
-      elsif element[-1] = " "
-        element.pop
-      end
-    end
-    self.new_by_name(element[2])
+    artist = filename.split(" - ")[0]
+    name = filename.split(" - ")[1].split(".")[0]
   end
 
 end
