@@ -52,7 +52,7 @@ class Song
     song = self.new
     song.name = n
     song.artist_name = a
-    #binding.pry
+    binding.pry
   end
 
 end
