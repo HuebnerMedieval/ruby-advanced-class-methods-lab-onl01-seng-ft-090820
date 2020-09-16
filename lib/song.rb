@@ -47,12 +47,12 @@ class Song
   end
 
   def self.new_from_filename(filename)
-    artist = filename.split(" - ")[0]
-    song_name = filename.split(" - ")[1].split(".")[0]
+    a = filename.split(" - ")[0]
+    n = filename.split(" - ")[1].split(".")[0]
     song = self.new
-    song.name = song_name
-    song.artist_name = artist
-    binding.pry
+    song.name = n
+    song.artist_name = a
+    #binding.pry
   end
 
 end
