@@ -52,11 +52,12 @@ class Song
     song = self.new_by_name(song_name)
     song.artist_name = artist
     song
-    
-   
-    # song.artist_name = artist
-    # song # song = self.new
-    # song.name = song_name
+  end
+
+  def self.create_from_filename(filename)
+    song = self.new_from_filename(filename)
+    song.save
+    song
   end
 
 end
